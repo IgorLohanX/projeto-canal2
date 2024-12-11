@@ -103,20 +103,20 @@ div.video > iframe {
 
 div#bdo > iframe#video1 {
     float: left;
-    width: 47%;
+    width: 46%;
     height: 95%;
     padding: 5px;
     border-radius: 15px;
-    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.725);
+    box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.725);
 }
 
 div#bdo > iframe#video2 {
     float: right;
-    width: 47%;
+    width: 46%;
     height: 95%;
     padding: 5px;
     border-radius: 15px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.725);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.725);
 }
 
 div.videos {
@@ -127,30 +127,30 @@ div.videos > iframe.warframe {
     height: 500px;
     padding: 5px;
     border-radius: 15px;
-    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.725);
+    box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.725);
 }
 
 div.videos > iframe#warframe1 {
     float: left;
-    width: 47%;
+    width: 46%;
     height: 95%;    
 }
 
 div.videos > iframe#warframe2 {
     float: right;
-    width: 47%;
+    width: 46%;
     height: 95%;    
 }
 
 div.videos > iframe#warframe3 {
     float: left;
-    width: 47%;
+    width: 46%;
     height: 95%;    
 }
 
 div.videos > iframe#warframe4 {
     float: right;
-    width: 47%;
+    width: 46%;
     height: 95%;    
 }
 
@@ -170,17 +170,76 @@ article#imagem {
     background-size: cover;
     background-attachment: fixed;
     background-position: right top;
-    width: 100%;
     height: 450px;
+    margin: 0px 7px;
+    box-shadow: inset 2px 2px 5px 2px rgba(0, 0, 0, 0.507);
+    border-radius: 5px;
 }
 
 section {
 }
 
+section > ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 5px;
+}
+
+section > ul > li {
+    color: white;
+    text-shadow: 2px 2px 2px var(--cor2);
+    line-height: 1.9em;
+    margin: 4px 0px;
+    font-size: 0.8em;
+}
+
+
+section#libdo {
+    display: inline;
+    float: left;
+    padding: 5px;
+    width: 46%;
+    height: 93%;
+    margin: 10px 0px;
+
+}
+
+
+section#liwarframe {
+    display: inline;
+    float: right;
+    padding: 5px;
+    width: 46%;
+    height: 93%;
+    margin: 10px 0px;
+}
+
+ul > h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px var(--cor2);
+    margin: 3px 0px;
+}
+
+ul > li > a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 2px var(--cor2);
+
+}
+
+li > a:hover {
+    text-decoration: underline;
+    color: white;
+    text-shadow: 2px 2px 2px var(--cor4);
+    letter-spacing: 1px;
+    transition-duration: .3s;
+}
+
 section > h1 {
     text-align: center;
     color: white;
-    padding: 5px;
+    padding: 10px;
     text-shadow: 2px 2px 2px black;
 }
 
@@ -208,14 +267,14 @@ footer {
 
 footer > p {
     color: white;
-    text-shadow: 2px 2px 2px var(--cor1);
+    text-shadow: 2px 2px 2px var(--cor4);
     padding: 5px;
 }
 
 footer > p > a {
     text-decoration: none;
     color: white;
-    text-shadow: 2px 2px 2px var(--cor1);
+    text-shadow: 2px 2px 2px var(--cor4);
 }
 
 footer > p > a:hover {
