@@ -5,8 +5,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: var(--font-padrao)
-    ;
+    font-family: var(--font-padrao);
 }
 
 /* Paleta de cores do projeto:
@@ -28,25 +27,32 @@
 }
 
 body, html {
-    background-color: lightgray ;
+    
+}
+
+body {
+    /* background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3), var(--cor4)); */
+    background-color: black;
 }
 
 header {
     background-color: black;
-    width: 100%;    
 }
 
 header > h1 {
     text-align: center;
+    text-shadow: 2px 2px 2px #0511F2;
     font-size: 2em;
-    color: white;
     font-weight: bolder;
+    color: white;
+    padding: 10px;
 }
 
 header > p {
     text-align: center;
-    font-size: 0.8em;
+    font-size: 0.7em;
     color: white;
+    text-shadow: 2px 2px 2px #0511F2;
 }
 
 strong {
@@ -54,27 +60,42 @@ strong {
 }
 
 nav {
-    width: 100%;
     background-color: black;
+    padding: 5px;
+    text-align: center;
 }
 
 nav > a {
+    text-align: justify;
     text-decoration: none;
     margin: auto;
+    margin: 0px 4px;
     color: var(--cor2);
+    text-shadow: 2px 1px 2px #0511F2;
 }
 
 nav > a:hover {
     color: var(--cor1);
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+}
+
+nav > a > span {
+    transform: translateY(30%);
 }
 
 main {
-    background-image: linear-gradient(to top, var(--cor1), var(--cor2), var(--cor3), var(--cor4));
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3), var(--cor4));
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 95vw;
+    border-radius: 10px;
+    
 }
 
 div.video {
     height: 500px;
-    display: block;
 }
 
 div.video > iframe {
@@ -82,24 +103,64 @@ div.video > iframe {
 
 div#bdo > iframe#video1 {
     float: left;
-    width: 45%;
+    width: 47%;
     height: 95%;
-    display: inline;
     padding: 5px;
     border-radius: 15px;
-    box-shadow: 2px 2px 5px rgb(255, 255, 255, 0.425);
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.725);
 }
 
 div#bdo > iframe#video2 {
     float: right;
-    width: 45%;
+    width: 47%;
     height: 95%;
-    display: inline;
     padding: 5px;
     border-radius: 15px;
-    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.425);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.725);
 }
 
+div.videos {
+    height: 450px;
+}
+
+div.videos > iframe.warframe {
+    height: 500px;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.725);
+}
+
+div.videos > iframe#warframe1 {
+    float: left;
+    width: 47%;
+    height: 95%;    
+}
+
+div.videos > iframe#warframe2 {
+    float: right;
+    width: 47%;
+    height: 95%;    
+}
+
+div.videos > iframe#warframe3 {
+    float: left;
+    width: 47%;
+    height: 95%;    
+}
+
+div.videos > iframe#warframe4 {
+    float: right;
+    width: 47%;
+    height: 95%;    
+}
+
+div.videos > iframe#warframe5 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 97%;    
+}
 
 article {
 }
@@ -109,38 +170,59 @@ article#imagem {
     background-size: cover;
     background-attachment: fixed;
     background-position: right top;
-    position: absolute;
-    width: 100%;
+    height: 450px;
 }
 
 section {
-    display: block;
 }
 
 section > h1 {
     text-align: center;
     color: white;
     padding: 5px;
+    text-shadow: 2px 2px 2px black;
 }
 
 section > p {
     text-align: center;
     color: white;
-    padding-bottom: 2px;
+    padding: 5px;
+    text-shadow: 2px 2px 2px black;
 }
 
-form {
-    display: inline-block;
-    margin: auto;
-}
-
-form > input[type=button] {
-}
 
 aside {
+    color: white;
     text-align: center;
+    text-shadow: 2px 2px 2px black;
+    padding: 5px;
 }
 
 footer {
     text-align: center;
+    background-image: linear-gradient(to bottom, black, gray, lightgray);
+    height: 35px;
+    
+}
+
+footer > p {
+    color: white;
+    text-shadow: 2px 2px 2px var(--cor1);
+    padding: 5px;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 2px var(--cor1);
+}
+
+footer > p > a:hover {
+    color: var(--cor1);
+    font-size: 1em;
+    text-shadow: 2px 2px 2px var(--cor4);
+    letter-spacing: 4px;
+    transition-duration: .5s;
+    
+
 }
