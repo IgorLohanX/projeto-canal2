@@ -106,6 +106,7 @@ div#bdo > iframe#video1 {
     width: 46%;
     height: 95%;
     padding: 5px;
+    margin-left: 2px;
     border-radius: 15px;
     box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.725);
 }
@@ -115,6 +116,7 @@ div#bdo > iframe#video2 {
     width: 46%;
     height: 95%;
     padding: 5px;
+    margin-right: 2px;
     border-radius: 15px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.725);
 }
@@ -133,25 +135,29 @@ div.videos > iframe.warframe {
 div.videos > iframe#warframe1 {
     float: left;
     width: 46%;
-    height: 95%;    
+    height: 95%;
+    margin-left: 2px;   
 }
 
 div.videos > iframe#warframe2 {
     float: right;
     width: 46%;
-    height: 95%;    
+    height: 95%;
+    margin-right: 2px;   
 }
 
 div.videos > iframe#warframe3 {
     float: left;
     width: 46%;
-    height: 95%;    
+    height: 95%;
+    margin-left: 2px;    
 }
 
 div.videos > iframe#warframe4 {
     float: right;
     width: 46%;
-    height: 95%;    
+    height: 95%;
+    margin-right: 2px;  
 }
 
 div.videos > iframe#warframe5 {
@@ -233,7 +239,7 @@ li > a:hover {
     color: white;
     text-shadow: 2px 2px 2px var(--cor4);
     letter-spacing: 1px;
-    transition-duration: .3s;
+    transition-duration: .6s;
 }
 
 section > h1 {
