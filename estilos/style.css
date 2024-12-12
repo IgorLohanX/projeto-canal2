@@ -292,3 +292,8 @@ footer > p > a:hover {
     
 
 }
+
+div#bdo iframe.off {
+    display: none;
+}
+

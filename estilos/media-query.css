@@ -124,12 +124,16 @@
         box-shadow: inset 2px 2px 5px 2px rgba(0, 0, 0, 0.507);
         border-radius: 6px;
     }
+
+    div.videos > iframe.off2 {
+        visibility: hidden;
+    }
 }
 
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
     /* Videos primeiro */
-    
+
     div.video {
         height: 700px;
     }
@@ -138,10 +142,54 @@
         height: 700px;
     }
     
+    div#bdo > iframe.off {
+        display: block;
+    }
+
+    div#bdo > iframe#video1 {
+        float: left;
+        width: 24%;
+        height: 95%;
+        padding: 5px;
+        margin-left: 2px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.725);
+    }
     
+    div#bdo > iframe#video2 {
+        float: right;
+        width: 24%;
+        height: 95%;
+        padding: 5px;
+        margin-right: 2px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.725);
+    }
+
+    div#bdo > iframe#video3 {
+        float: left;
+        width: 23.5%;
+        height: 95%;
+        padding: 5px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.725);
+    }
+    
+    div#bdo > iframe#video4 {
+        float: right;
+        width: 23.5%;
+        height: 95%;
+        padding: 5px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.725);
+    }
+
+    div > iframe.ajustebdo {
+        margin-top: 10px;
+    }
  /* ------------------------------    */   
     main {
-        width: 85vw;
+        width: 90vw;
     }
 
     header {
@@ -181,6 +229,167 @@
 
     section > p {
         font-size: 1.7em;
+    }
+
+    ul > h1 {
+        font-size: 2em;
+    }
+
+    ul > li > a {
+        font-size: 1.5em;
+    }
+
+
+    aside {
+        font-size: 1.7em;
+    }
+
+    footer > p {
+        font-size: 2em;
+    }
+
+    footer > p > a {
+        color: var(--cor2);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+     /* Videos primeiro */
+    
+     div.video {
+        height: 700px;
+    }
+
+    div.videos {
+        height: 700px;
+    }
+    
+    div#bdo > iframe.off {
+        display: block;
+    }
+
+    div#bdo > iframe#video1 {
+        float: left;
+        width: 24%;
+        height: 95%;
+        padding: 5px;
+        margin-left: 2px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.725);
+    }
+    
+    div#bdo > iframe#video2 {
+        float: right;
+        width: 24%;
+        height: 95%;
+        padding: 5px;
+        margin-right: 2px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.725);
+    }
+
+    div#bdo > iframe#video3 {
+        float: left;
+        width: 23.9%;
+        height: 95%;
+        padding: 5px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.725);
+    }
+    
+    div#bdo > iframe#video4 {
+        float: right;
+        width: 23.9%;
+        height: 95%;
+        padding: 5px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.725);
+    }
+
+    div > iframe.ajustebdo {
+        margin-top: 10px;
+    }
+
+    div.videos > iframe#warframe1 {
+        width: 32%;
+    }
+    
+    div.videos > iframe#warframe2 {
+        width: 32%; 
+    }
+    
+    div.videos > iframe#warframe3 {
+        width: 32%;  
+    }
+    
+    div.videos > iframe#warframe4 {
+        width: 32%;
+    }
+    
+    div.videos > iframe#warframe5 {
+        width: 35%;
+    }
+ /* ------------------------------    */   
+    main {
+        width: 90vw;
+    }
+
+    header {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3), var(--cor4));
+    }
+
+    header > h1 {
+        font-size: 3.6em;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.655);
+    }
+    
+    header > p {
+        font-size: 1.4em;
+        padding-bottom: 10px;
+    }
+
+    strong {
+        color: yellow;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    nav {
+        margin: 10px 0px;
+    }
+
+    nav > a {
+        font-size: 1.4em;
+        margin: 0px 15px;
+        text-shadow: 1px 1px 1px var(--cor4);
+    }
+
+    article#imagem {
+        height: 600px;
+    }
+
+    section > h1 {
+        font-size: 2.5em;
+    }
+
+    section > p {
+        font-size: 1.7em;
+    }
+
+    ul > h1 {
+        font-size: 2em;
+        margin-bottom: 50px;
+    }
+
+    ul > li {
+        text-align: center;
+    
+    }
+
+    ul > li > a {
+        font-size: 1.7em;
+        line-height: 1.5em;
     }
 
 
