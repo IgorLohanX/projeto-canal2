@@ -266,7 +266,7 @@ aside {
 
 footer {
     text-align: center;
-    background-image: linear-gradient(to bottom, black, gray, lightgray);
+    background-color: black;
     height: 35px;
     
 }

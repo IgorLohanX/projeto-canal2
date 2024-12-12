@@ -1,15 +1,132 @@
 @charset "UTF-8";
 
+:root {
+    --cor1: #EE05F2;
+    --cor2: #AB04D9;
+    --cor3: #1903A6;
+    --cor4: #0511F2;
+
+    --font-padrao: "Yatra One", system-ui, Arial , Helvetica, sans-serif;
+}
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    
+    header > h1 {
+        font-size: 2.5em;
+    }
+
+    header > p {
+        font-size: 0.8em;
+    }
+
+    nav {
+        font-size: 1.3em;
+    }
+
+    nav > a {
+        color: white;
+        text-shadow: 1px 1px 1px var(--cor2);
+    }
+
+    section > h1 {
+        font-size: 2em;
+    }
+
+    section > p {
+        font-size: 1.5em;
+    }
+
+    div#bdo > iframe#video1 {
+        width: 48%;
+    }
+
+    div#bdo > iframe#video2 {
+        width: 48%;
+    }
+
+    div.video {
+        height: 600px;
+    }
+
+    div.videos {
+        height: 500px;
+    }
+
+    ul > h1{
+        font-size: 1.5em;
+    }
+
+    ul > li {
+        text-align: center;
+    }
+
+    ul > li > a {
+        font-size: 1.3em;
+        
+    }
+
+    div.videos > iframe#warframe1 {
+        width: 48%;  
+    }
+    
+    div.videos > iframe#warframe2 {
+        width: 48%;
+
+    }
+    
+    div.videos > iframe#warframe3 {
+        width: 48%;   
+    }
+    
+    div.videos > iframe#warframe4 {
+        width: 48%;
+    }
+    
+    div.videos > iframe#warframe5 {
+        height: 98%;    
+    }
+
+    aside {
+        margin: 10px 0px;
+        font-size: 1.5em;
+    }        
+
+    footer .gradient {
+        background-image: linear-gradient(to left, var(--cor4), var(--cor1), var(--cor2));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: black;
+        text-shadow: 1px 1px 1px var(--cor2);
+    }
+
+    footer > p > a::before {
+        content: '> ';
+        
+    }
+
+    footer > p > a::after {
+        content: ' <';
+        color: white;
+    }
+
+    footer > p {
+        font-size: 2em;
+    }
+
     article#imagem {
-        background-image: url('../imagens/parallax.jpg');
+        background-image: url('../imagens/parallax-p.jpg');
         background-size: cover;
         background-attachment: fixed;
-        background-position: right;
+        background-position: center;
         height: 450px;
         margin: 0px 7px;
         box-shadow: inset 2px 2px 5px 2px rgba(0, 0, 0, 0.507);
         border-radius: 6px;
     }
+}
+
+
+@media screen and (min-width: 992px) {
+    
 }
