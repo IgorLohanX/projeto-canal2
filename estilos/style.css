@@ -91,6 +91,8 @@ main {
     margin-bottom: 10px;
     width: 95vw;
     border-radius: 10px;
+    transition: width 0.3s, height 0.3s;  /* transiçao da mudança de uma query pra outra */
+    transition-timing-function: ease;
     
 }
 
